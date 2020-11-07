@@ -31,6 +31,8 @@ void printMoon() {
 
   moon = moonPhase.getPhase(year, month, day, hour);
 
+  // Waxing: 0-180
+  // Waning: 180-360
   Serial.print( "Moon phase angle: " );
   Serial.print( moon.angle );             // angle is a integer between 0-360
   Serial.println( " degrees." );

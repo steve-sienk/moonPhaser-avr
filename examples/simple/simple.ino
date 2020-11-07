@@ -13,12 +13,14 @@ void printMoon() {
   
   // January 31st, 2020 @ 1:30PM UTC
   int32_t year = 2020;
-  int32_t month = 1;
-  int32_t day = 31;
-  double hour = 13.5;
+  int32_t month = 11;
+  int32_t day = 14;
+  double hour = 0;
 
   moon = moonPhase.getPhase(year, month, day, hour);
 
+  // Waxing: 0-180
+  // Waning: 180-360
   Serial.print( "Moon phase angle: " );
   Serial.print( moon.angle );             // angle is a integer between 0-360
   Serial.println( " degrees." );
@@ -29,5 +31,5 @@ void printMoon() {
 void loop() {
   // put your main code here, to run repeatedly:
   printMoon();
-  delay(5000);
+  delay(1000);
 }
