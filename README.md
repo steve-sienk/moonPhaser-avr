@@ -1,6 +1,7 @@
-### moonPhase
+### moonPhaser
 
-An avr library to get the moon phase angle and percentage of the moon that is illuminated.
+An avr library to get the moon phase angle and percentage of the moon that is illuminated. 
+Referenced from the [moonPhase esp32 library](https://github.com/CelliesProjects/moonPhase-esp32). 
 
 #### Functions:
 
